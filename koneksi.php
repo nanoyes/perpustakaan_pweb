@@ -1,12 +1,12 @@
 <?php
-$host = 'localhost';
-$username = 'root'; // Sesuaikan dengan username MySQL Anda
-$password = ''; // Biasanya tidak ada password di instalasi lokal
-$dbname = 'perpustakaan_pweb';
+$host = "localhost";
+$username = "root";
+$password = "";
+$database = "login_pweb"; // Sesuaikan dengan nama database Anda
 
-$mysqli = new mysqli($host, $username, $password, $dbname);
+$koneksi = new mysqli($host, $username, $password, $database);
 
-if ($mysqli->connect_error) {
-    die("Koneksi gagal: " . $mysqli->connect_error);
+if ($koneksi->connect_error) {
+    die("Koneksi gagal: " . $koneksi->connect_error);
 }
 ?>
